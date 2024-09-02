@@ -1,5 +1,8 @@
-package model;
+package wrappers.model;
 
+import lombok.Builder;
+
+@Builder
 public class ComparacaoPrimitivosEWrappers {
 
     private Integer inteiroWrapper;
@@ -12,26 +15,7 @@ public class ComparacaoPrimitivosEWrappers {
     private char caracterPrimitivo;
     private String conjuntoDeCaracteres;
 
-    public ComparacaoPrimitivosEWrappers(
-        Integer inteiroWrapper, int inteiroPrimitivo,
-        Double decimalWrapper, double decimalPrimitivo,
-        Boolean boleanoWrapper, boolean boleanoPrimitivo,
-        Character caracterWrapper, char caracterPrimitivo,
-        String conjuntoDeCaracteres
-    ) {
-        this.inteiroWrapper = inteiroWrapper;
-        this.inteiroPrimitivo = inteiroPrimitivo;
-        this.decimalWrapper = decimalWrapper;
-        this.decimalPrimitivo = decimalPrimitivo;
-        this.boleanoWrapper = boleanoWrapper;
-        this.boleanoPrimitivo = boleanoPrimitivo;
-        this.caracterWrapper = caracterWrapper;
-        this.caracterPrimitivo = caracterPrimitivo;
-        this.conjuntoDeCaracteres = conjuntoDeCaracteres;
-    }
-
-    public void exibirValoresPadrao() {
-        System.out.println("Valores padrão das variáveis:");
+    public void exibirValoresIniciais() {
         System.out.println("inteiroWrapper (Integer): " + inteiroWrapper); 
         System.out.println("inteiroPrimitivo (int): " + inteiroPrimitivo); 
         System.out.println("decimalWrapper (Double): " + decimalWrapper); 
